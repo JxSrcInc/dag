@@ -8,6 +8,8 @@ import java.util.List;
 public class LongestPathDAG {
     private List<Vertex> vertices;
     private List<Edge> edges;
+    public int longestDistance = 0;
+    public List<Integer> longestPath = new ArrayList<>();
 
     public LongestPathDAG(List<Vertex> vertices, List<Edge> edges) {
         this.vertices = vertices;
@@ -37,7 +39,8 @@ public class LongestPathDAG {
         for (int i = 0; i < vertices.size(); i++) {
         	if(dist[i] == Integer.MIN_VALUE)
         		continue;
-            System.out.println("Longest path to vertex " + vertices.get(i).id + ": " + dist[i]);
+        	longestPath.add(vertices.get(i).id);
+        	longestDistance += dist[i];
         }
     }
 

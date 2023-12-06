@@ -1,9 +1,13 @@
 package com.example.app.dag;
 
 public class Vertex {
-    long id;
+    int id;
 
-    public Vertex(long id) {
+    public Vertex(int id) {
         this.id = id;
+    }
+    
+    public int getId() {
+    	return id;
     }
 }

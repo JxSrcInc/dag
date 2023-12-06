@@ -10,4 +10,14 @@ public class Edge {
         this.to = to;
         this.weight = weight;
     }
+    
+    public int getWeight() {
+    	return this.weight;
+    }
+    public Vertex getFrom() {
+    	return from;
+    }
+    public Vertex getTo() {
+    	return to;
+    }
 }
