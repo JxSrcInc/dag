@@ -11,7 +11,7 @@ import org.jgrapht.alg.cycle.CycleDetector;
 import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
 import static org.junit.jupiter.api.Assertions.*;
-import com.example.app.dag.RandomDAGGenerator;
+import com.example.app.dag.ScaleDAGGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ class DagApplicationTests {
 
     void testLongestPathInDAG(int numVertices, int expectedLongestPathLength) {
         // Create a sample DAG
-        Graph<Vertex, Edge> randomDAG = RandomDAGGenerator.generateRandomDAG(numVertices);
+        Graph<Vertex, Edge> randomDAG = ScaleDAGGenerator.generateRandomDAG(numVertices);
         List<Vertex> vertices = new ArrayList<>(randomDAG.vertexSet());
         List<Edge> edges = new ArrayList<>(randomDAG.edgeSet());
 

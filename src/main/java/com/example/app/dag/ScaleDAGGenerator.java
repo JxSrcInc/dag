@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class RandomDAGGenerator {
+public class ScaleDAGGenerator {
 
     public static Graph<Vertex, Edge> generateRandomDAG(int numVertices) {
         Graph<Vertex, Edge> dag = new DefaultDirectedGraph<>(Edge.class);

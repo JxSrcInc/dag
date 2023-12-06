@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.example.app.dag.Edge;
 import com.example.app.dag.LongestPathDAG;
-import com.example.app.dag.RandomDAGGenerator;
+import com.example.app.dag.ScaleDAGGenerator;
 import com.example.app.dag.Vertex;
 
 @SpringBootApplication
@@ -20,7 +20,7 @@ public class DagApplication {
 		SpringApplication.run(DagApplication.class, args);
 
         int numVertices = 10000;
-        Graph<Vertex, Edge> randomDAG = RandomDAGGenerator.generateRandomDAG(numVertices);
+        Graph<Vertex, Edge> randomDAG = ScaleDAGGenerator.generateRandomDAG(numVertices);
         CycleDetector<Vertex, Edge> cycleDetector = new CycleDetector<>(randomDAG);
         if(!cycleDetector.detectCycles()) {
         	System.out.println("Graph should be a DAG");

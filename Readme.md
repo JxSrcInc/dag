@@ -14,15 +14,19 @@ Specify the start vertex in the same file.
 
 View the longest path in the console output.
 
+## Large Scale Branch
+Add RandomDAGGenerator to create large DAG.
+Add unit test 
+
 ## Questions and Answers
 
 Q: Does the solution work for larger graphs? 
 
-A: Yes, the solution is designed to work for graphs of various sizes.
+A: Yes, the solution is designed to work for graphs of various sizes. It is also tested on a large DAG of 10000 vertices created by ScaleDAGGenerator in largescale branch. 
 
 Q: Can you think of any optimizations? 
 
-A: While optimizations are possible, the algorithm for finding the longest path is inherently complex. Further investigation is needed for specific optimizations.
+A: While optimizations are undeniably crucial, they often involve intricate analyses in topology and mathematics, which fall beyond the scope of a project primarily centered on the practical aspects of application development from an engineering perspective.
 
 Q: What’s the computational complexity of your solution? 
 
