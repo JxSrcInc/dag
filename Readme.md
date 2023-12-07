@@ -22,7 +22,7 @@ Add unit test
 
 Q: Does the solution work for larger graphs? 
 
-A: Yes, the solution is designed to work for graphs of various sizes. It is also tested on a large DAG of 10000 vertices created by ScaleDAGGenerator in largescale branch. 
+A: Yes, the solution is designed to work for graphs of various sizes. It is also tested on a large DAG of 10000 vertices created by using ScaleDAGGenerator. 
 
 Q: Can you think of any optimizations? 
 
